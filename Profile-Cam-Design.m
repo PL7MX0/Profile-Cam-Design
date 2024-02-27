@@ -50,7 +50,7 @@ for i = 0:Number_of_point - 1
     if (Theta(i + 1) > 45) && (Theta(i + 1) < 135)
         s(i + 1) = LOF * (((Theta(i + 1) - 45) / Beta_1) - ( (0.5 / pi) * sin( 2 * pi * ((Theta(i + 1) - 45) / Beta_1) ) ));
         v(i + 1) = LOF / Beta_1 * (1 - cos( 2 * pi * ((Theta(i + 1) - 45) / Beta_1) ) );
-        a(i + 1) = 2 * pi * 25 / (Beta_1 ^ 2) * sin( 2 * pi * ((Theta(i + 1) - 45) / Beta_1) ) ;
+        a(i + 1) = 2 * pi * LOF / (Beta_1 ^ 2) * sin( 2 * pi * ((Theta(i + 1) - 45) / Beta_1) ) ;
 
     elseif (Theta(i + 1) >= 135) && (Theta(i + 1) <= 225)
         s(i + 1) = LOF;
@@ -58,7 +58,7 @@ for i = 0:Number_of_point - 1
     elseif (Theta(i + 1) > 225) && (Theta(i + 1) < 315)
         s(i + 1) = LOF * (1 - ((Theta(i + 1) - 225) / Beta_2) + ( (0.5 / pi) * sin( 2 * pi * ((Theta(i + 1) - 225) / Beta_2) ) ) );
         v(i + 1) = - LOF / Beta_2 * (1 - cos( 2 * pi * ((Theta(i + 1) - 225) / Beta_2) ) );
-        a(i + 1) = - 2 * pi * 25 / (Beta_2 ^ 2) * sin( 2 * pi * ((Theta(i + 1) - 225) / Beta_2) ) ;
+        a(i + 1) = - 2 * pi * LOF / (Beta_2 ^ 2) * sin( 2 * pi * ((Theta(i + 1) - 225) / Beta_2) ) ;
 
     end
 
