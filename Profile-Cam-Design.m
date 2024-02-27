@@ -40,7 +40,6 @@ a         = zeros(1,Number_of_point);
 R_profile = zeros(1,Number_of_point);
 Phi       = zeros(1,Number_of_point);
 
-R_roller_ = R_roller * ones(1,Number_of_point);
 R_prime_  = R_prime * ones(1,Number_of_point);
 R_pitch   = zeros(1,Number_of_point);
 
