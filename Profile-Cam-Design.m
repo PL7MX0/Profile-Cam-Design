@@ -1,6 +1,5 @@
 %{
-    Dev: Pongsapat Lakrod
-    ID : 6501004662038 (I-ME)
+    Dev: Pongsapat Lakrod (I-ME)
 
     Condition:
     Cam angle(°) | 0   45  90  135 180 225 270 315 360
